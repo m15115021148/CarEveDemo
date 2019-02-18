@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/image_onRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/rec_spot" />
+
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#90000000"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_mode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_MovieEV"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@drawable/mode_changeto_still" />
+
+        <Button
+            android:id="@+id/button_MovieEV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ev_off" />
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_MovieEV"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/setup" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="#90000000"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_record"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@drawable/pbk" />
+
+        <Button
+            android:id="@+id/button_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shutter_rec_start" />
+
+        <Button
+            android:id="@+id/button_pic_on_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_record"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/shutter_capture_instill_lock" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/photo_layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="false"
+        android:background="#90000000"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_photo_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/pbk" />
+
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:background="@drawable/shutter_still" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="#90000000"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_top_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Resolution"
+            android:textSize="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:id="@+id/textView_top_max_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_top_resolution"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/textView_top_resolution"
+            android:text="max_record_time"
+            android:textSize="@dimen/activity_vertical_margin" />
+
+        <ImageView
+            android:id="@+id/imageView_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@+id/textView_top_max_record_time" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar_MovieEV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/layout_left"
+        android:layout_weight="1"
+        android:max="12" />
+
+    <RelativeLayout
+        android:id="@+id/layout_blank"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone" >
+
+    </RelativeLayout>
+    
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

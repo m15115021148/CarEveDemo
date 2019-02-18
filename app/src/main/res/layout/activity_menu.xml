@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/relativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+<LinearLayout
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:textSize="@dimen/activity_vertical_margin"
+    tools:context=".MenuActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_camera_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#AAAAAA"
+            android:text="攝影機" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="名稱" />
+            
+            <TextView
+                android:id="@+id/textView_camera_info_SSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="密碼" />
+            
+            <TextView
+                android:id="@+id/textView_camera_info_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_record_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#AAAAAA"
+            android:text="錄影" />
+
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="循環錄影" />
+            
+            <TextView
+                android:id="@+id/textView_record_info_cyclicRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>        
+
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="影像解析度" />
+            
+            <TextView
+                android:id="@+id/textView_record_info_recSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>  		
+		
+		
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_record_info_autoRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:text="自動錄影" />
+
+            <CheckBox
+                android:id="@+id/checkBox_autoRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:id="@+id/textView_record_info_motionDetect"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+            	android:text="物體移動偵測觸發錄影" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_motionDetect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_record_info_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:text="錄製聲音" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_record_info_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:text="顯示日期時間" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="預覽緩衝時間" />
+            
+            <TextView
+                android:id="@+id/textView_network_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_photo_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#AAAAAA"
+            android:text="照相" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="照相解析度" />
+            
+            <TextView
+                android:id="@+id/textView_photo_info_photoSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout> 
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_WDR_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#AAAAAA"
+            android:text="影像品質" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView_WDR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:text="WDR" />
+
+            <CheckBox
+                android:id="@+id/CheckBox_WDR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#AAAAAA"
+            android:text="記憶卡" />
+
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="狀態" />
+            
+            <TextView
+                android:id="@+id/textView_card_info_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="剩餘空間" />
+            
+            <TextView
+                android:id="@+id/textView_card_info_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout> 
+ 
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+       		<TextView
+            	android:id="@+id/textView_card_info_format"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="格式化" />
+            
+            <TextView
+                android:id="@+id/textView_card_format"
+                android:layout_width="wrap_content"
+               	android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="按下啟動格式化" />
+            
+        </RelativeLayout> 
+        
+        
+        
+    </LinearLayout>    
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_adv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#AAAAAA"
+            android:text="進階設定" />
+
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="自動關機" />
+            
+            <TextView
+                android:id="@+id/textView_adv_setting_auto_shotdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>        
+
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="碰撞感應" />
+            
+            <TextView
+                android:id="@+id/textView_adv_setting_Gsensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>
+		
+		<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="TVOut" />
+            
+            <TextView
+                android:id="@+id/textView_adv_setting_TVformat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout>
+     
+        
+    </LinearLayout>     
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="@dimen/activity_vertical_margin"
+       android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_system"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="#AAAAAA"
+            android:text="系統" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_margin="3dp"
+            	android:text="版本" />
+            
+            <TextView
+                android:id="@+id/textView_system_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dp"
+                android:text="ZZZZ" />
+            
+        </RelativeLayout> 
+
+    </LinearLayout>
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_AP_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#AAAAAA"
+        android:text="切換AP/Station模式" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="目前模式" />
+
+        <TextView
+            android:id="@+id/textView_AP_switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="3dp"
+            android:text="ZZZZ" />
+    </RelativeLayout>
+</LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+ 
+            <Button
+                android:id="@+id/button_system_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="#FF0000"
+                android:text="System Reset" />
+            
+        </RelativeLayout> 
+
+    
+</LinearLayout>
+
+    </ScrollView>
+    
+    
+            </RelativeLayout>

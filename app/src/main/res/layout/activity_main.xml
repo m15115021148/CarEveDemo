@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/logView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+   		android:singleLine="false"
+		android:text="TextView" />
+    
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_QryMaxRecSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryMaxRecSec" />
+
+        <Button
+            android:id="@+id/button_QryRecTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryRecTime" />
+
+        <Button
+            android:id="@+id/button_QryMaxPhotoNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryMaxPhotoNum" />        
+ 
+        <Button
+            android:id="@+id/button_QryFWVerwion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryFWVerwion" /> 
+            
+        <Button
+            android:id="@+id/button_QryBatteryStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryBatteryStatus" />
+        
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_QryCardStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryCardStatus" />        
+
+        <Button
+            android:id="@+id/button_QrySSIDPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QrySSIDPass" />           
+        
+        <Button
+            android:id="@+id/button_QryDiskFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryDiskFree" />
+
+        <Button
+            android:id="@+id/button_QryFileList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryFileList" />        
+
+        <Button
+            android:id="@+id/button_QryDeviceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryDeviceStatus" />         
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <Button
+            android:id="@+id/button_QryHWCap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryHWCap" /> 
+            
+		<Button
+            android:id="@+id/button_QryRecSizeCap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QryRecSizeCap" />
+
+		<Button
+		    android:id="@+id/button1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Button" />
+        
+    </LinearLayout>
+    
+     <Button
+        android:id="@+id/button_download_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="download_movie" />
+
+</LinearLayout>
